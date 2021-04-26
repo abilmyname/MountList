@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		049D1433262005DA00BC6675 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D1432262005DA00BC6675 /* Profile.swift */; };
 		04F9672F261FF5C200285146 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F9672E261FF5C200285146 /* AppDelegate.swift */; };
 		04F96731261FF5C200285146 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F96730261FF5C200285146 /* SceneDelegate.swift */; };
 		04F96733261FF5C200285146 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F96732261FF5C200285146 /* ContentView.swift */; };
 		04F96735261FF65D00285146 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F96734261FF65D00285146 /* Assets.xcassets */; };
 		04F96738261FF65D00285146 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F96737261FF65D00285146 /* Preview Assets.xcassets */; };
 		04F9673B261FF65E00285146 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F96739261FF65E00285146 /* LaunchScreen.storyboard */; };
+		04F9674A261FFA2B00285146 /* MountDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F96749261FFA2B00285146 /* MountDetail.swift */; };
+		04F9674D261FFA3B00285146 /* MountRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F9674C261FFA3B00285146 /* MountRow.swift */; };
+		04F9674F261FFA4E00285146 /* MountList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F9674E261FFA4E00285146 /* MountList.swift */; };
+		04F96752261FFA8900285146 /* Mount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F96751261FFA8900285146 /* Mount.swift */; };
+		04F96755261FFAD200285146 /* DummyMount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F96754261FFAD100285146 /* DummyMount.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		049D1432262005DA00BC6675 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		04F9672B261FF5C200285146 /* MountList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MountList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F9672E261FF5C200285146 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04F96730261FF5C200285146 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,11 @@
 		04F96737261FF65D00285146 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		04F9673A261FF65E00285146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04F9673C261FF65E00285146 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F96749261FFA2B00285146 /* MountDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountDetail.swift; sourceTree = "<group>"; };
+		04F9674C261FFA3B00285146 /* MountRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountRow.swift; sourceTree = "<group>"; };
+		04F9674E261FFA4E00285146 /* MountList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountList.swift; sourceTree = "<group>"; };
+		04F96751261FFA8900285146 /* Mount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mount.swift; sourceTree = "<group>"; };
+		04F96754261FFAD100285146 /* DummyMount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyMount.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +68,9 @@
 		04F9672D261FF5C200285146 /* MountList */ = {
 			isa = PBXGroup;
 			children = (
-				04F9672E261FF5C200285146 /* AppDelegate.swift */,
-				04F96730261FF5C200285146 /* SceneDelegate.swift */,
-				04F96732261FF5C200285146 /* ContentView.swift */,
+				04F96746261FF79C00285146 /* Base */,
+				04F96744261FF77100285146 /* View */,
+				04F96743261FF76800285146 /* Model */,
 				04F96734261FF65D00285146 /* Assets.xcassets */,
 				04F96739261FF65E00285146 /* LaunchScreen.storyboard */,
 				04F9673C261FF65E00285146 /* Info.plist */,
@@ -73,6 +85,36 @@
 				04F96737261FF65D00285146 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04F96743261FF76800285146 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04F96751261FFA8900285146 /* Mount.swift */,
+				04F96754261FFAD100285146 /* DummyMount.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04F96744261FF77100285146 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04F96732261FF5C200285146 /* ContentView.swift */,
+				04F96749261FFA2B00285146 /* MountDetail.swift */,
+				04F9674C261FFA3B00285146 /* MountRow.swift */,
+				04F9674E261FFA4E00285146 /* MountList.swift */,
+				049D1432262005DA00BC6675 /* Profile.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04F96746261FF79C00285146 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				04F9672E261FF5C200285146 /* AppDelegate.swift */,
+				04F96730261FF5C200285146 /* SceneDelegate.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,7 +189,13 @@
 			files = (
 				04F9672F261FF5C200285146 /* AppDelegate.swift in Sources */,
 				04F96731261FF5C200285146 /* SceneDelegate.swift in Sources */,
+				04F96755261FFAD200285146 /* DummyMount.swift in Sources */,
+				04F9674A261FFA2B00285146 /* MountDetail.swift in Sources */,
 				04F96733261FF5C200285146 /* ContentView.swift in Sources */,
+				04F9674D261FFA3B00285146 /* MountRow.swift in Sources */,
+				04F9674F261FFA4E00285146 /* MountList.swift in Sources */,
+				049D1433262005DA00BC6675 /* Profile.swift in Sources */,
+				04F96752261FFA8900285146 /* Mount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
